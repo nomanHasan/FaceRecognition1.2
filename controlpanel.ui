@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ControlPanel</class>
+ <widget class="QWidget" name="ControlPanel">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>873</width>
+    <height>647</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>ControlPanel</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 0);</string>
+  </property>
+  <widget class="QLabel" name="loginLabel">
+   <property name="geometry">
+    <rect>
+     <x>250</x>
+     <y>60</y>
+     <width>481</width>
+     <height>101</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);color: rgb(255, 85, 0);
+font: bold 26pt &quot;Century Gothic&quot;;</string>
+   </property>
+   <property name="text">
+    <string>LOGIN WITH YOUR FACE</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="videoFeed">
+   <property name="geometry">
+    <rect>
+     <x>310</x>
+     <y>200</y>
+     <width>280</width>
+     <height>280</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+   </property>
+   <property name="text">
+    <string>TextLabel</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="userLabel">
+   <property name="geometry">
+    <rect>
+     <x>580</x>
+     <y>20</y>
+     <width>81</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);color: rgb(85, 255, 0);
+font: bold 12pt &quot;Century Gothic&quot;;</string>
+   </property>
+   <property name="text">
+    <string>User :</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="usernameValue">
+   <property name="geometry">
+    <rect>
+     <x>700</x>
+     <y>20</y>
+     <width>151</width>
+     <height>35</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">background-color: rgba(255, 255, 255, 0);color: rgb(85, 255, 0);
+font: bold 12pt &quot;Century Gothic&quot;;</string>
+   </property>
+   <property name="text">
+    <string>Name</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="deleteButton">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>220</y>
+     <width>80</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(85, 0, 0);
+border-color: rgba(255, 255, 255, 0);
+font: 75 12pt &quot;Microsoft YaHei&quot;;
+background-color: rgb(255, 170, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>DELETE</string>
+   </property>
+  </widget>
+  <widget class="QComboBox" name="selectionComboBox">
+   <property name="geometry">
+    <rect>
+     <x>80</x>
+     <y>220</y>
+     <width>121</width>
+     <height>22</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(85, 0, 0);
+border-color: rgba(255, 255, 255, 0);
+font: 75 12pt &quot;Microsoft YaHei&quot;;
+background-color: rgb(255, 170, 0);
+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="updateButton">
+   <property name="geometry">
+    <rect>
+     <x>340</x>
+     <y>220</y>
+     <width>80</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(85, 0, 0);
+border-color: rgba(255, 255, 255, 0);
+font: 75 12pt &quot;Microsoft YaHei&quot;;
+background-color: rgb(255, 170, 0);
+</string>
+   </property>
+   <property name="text">
+    <string>UPDATE</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="faceDatabaseButton">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>520</y>
+     <width>121</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Microsoft YaHei&quot;;color: rgb(85, 0, 0);
+background-color: rgb(255, 170, 0);</string>
+   </property>
+   <property name="text">
+    <string>Face Database</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="databaseConfigButton">
+   <property name="geometry">
+    <rect>
+     <x>470</x>
+     <y>520</y>
+     <width>221</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 12pt &quot;Microsoft YaHei&quot;;color: rgb(85, 0, 0);
+background-color: rgb(255, 170, 0);</string>
+   </property>
+   <property name="text">
+    <string>Edit Database Configuration</string>
+   </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>100</x>
+     <y>270</y>
+     <width>201</width>
+     <height>181</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout">
+      <item>
+       <widget class="QLabel" name="nameLabel">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 0);color: rgb(85, 255, 0);
+font: 10pt &quot;Lucida Console&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Name</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="occupationLabel">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 0);color: rgb(85, 255, 0);
+font: 10pt &quot;Lucida Console&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Occupation</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="ageLabel">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 0);color: rgb(85, 255, 0);
+font: 10pt &quot;Lucida Console&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Age</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="emailLabel">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 0);color: rgb(85, 255, 0);
+font: 10pt &quot;Lucida Console&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Email</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+    <item>
+     <layout class="QVBoxLayout" name="verticalLayout_2">
+      <item>
+       <widget class="QLabel" name="nameValue">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 0);color: rgb(85, 255, 0);
+font: 10pt &quot;Lucida Console&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Name</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="occupationValue">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 0);color: rgb(85, 255, 0);
+font: 10pt &quot;Lucida Console&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Occupation</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="ageValue">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 0);color: rgb(85, 255, 0);
+font: 10pt &quot;Lucida Console&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Age</string>
+        </property>
+       </widget>
+      </item>
+      <item>
+       <widget class="QLabel" name="emailValue">
+        <property name="styleSheet">
+         <string notr="true">background-color: rgba(255, 255, 255, 0);color: rgb(85, 255, 0);
+font: 10pt &quot;Lucida Console&quot;;</string>
+        </property>
+        <property name="text">
+         <string>Email</string>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>

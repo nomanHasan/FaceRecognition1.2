@@ -1,0 +1,366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindowClass</class>
+ <widget class="QMainWindow" name="MainWindowClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>909</width>
+    <height>654</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(0, 0, 0);</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QLabel" name="videoFeed">
+    <property name="geometry">
+     <rect>
+      <x>250</x>
+      <y>30</y>
+      <width>601</width>
+      <height>481</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);</string>
+    </property>
+    <property name="text">
+     <string>TextLabel</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="detectedFace">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>30</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QLabel" name="faceLabel">
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>30</y>
+      <width>70</width>
+      <height>70</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);font: 12pt &quot;Microsoft YaHei&quot;;color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="startButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>570</y>
+      <width>80</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(85, 0, 0);
+border-color: rgba(255, 255, 255, 0);
+font: 75 12pt &quot;Microsoft YaHei&quot;;
+background-color: rgb(255, 170, 0);
+</string>
+    </property>
+    <property name="text">
+     <string>START</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="stopButton">
+    <property name="geometry">
+     <rect>
+      <x>120</x>
+      <y>570</y>
+      <width>80</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 75 12pt &quot;Microsoft YaHei&quot;;
+color: rgb(0, 0, 0);
+background-color: rgb(255, 170, 0);</string>
+    </property>
+    <property name="text">
+     <string>STOP</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="trainFace">
+    <property name="geometry">
+     <rect>
+      <x>230</x>
+      <y>570</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Microsoft YaHei&quot;;color: rgb(0, 0, 0);
+background-color: rgb(255, 170, 0);</string>
+    </property>
+    <property name="text">
+     <string>Train from CSV</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="faceDatabaseButton">
+    <property name="geometry">
+     <rect>
+      <x>410</x>
+      <y>570</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Microsoft YaHei&quot;;color: rgb(85, 0, 0);
+background-color: rgb(255, 170, 0);</string>
+    </property>
+    <property name="text">
+     <string>Face Database</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="addPersonButton">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>470</y>
+      <width>91</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Microsoft YaHei&quot;;color: rgb(85, 0, 0);
+background-color: rgb(255, 170, 0);</string>
+    </property>
+    <property name="text">
+     <string>Add Person</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="controlPanelButton">
+    <property name="geometry">
+     <rect>
+      <x>579</x>
+      <y>570</y>
+      <width>121</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Microsoft YaHei&quot;;color: rgb(85, 0, 0);
+background-color: rgb(255, 170, 0);</string>
+    </property>
+    <property name="text">
+     <string>Control Panel</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="aboutButton">
+    <property name="geometry">
+     <rect>
+      <x>730</x>
+      <y>570</y>
+      <width>80</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 12pt &quot;Microsoft YaHei&quot;;color: rgb(85, 0, 0);
+background-color: rgb(255, 170, 0);</string>
+    </property>
+    <property name="text">
+     <string>About</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="statusLabel">
+    <property name="geometry">
+     <rect>
+      <x>350</x>
+      <y>540</y>
+      <width>301</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);font: 10pt &quot;Microsoft YaHei&quot;;color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QWidget" name="layoutWidget">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>260</y>
+      <width>201</width>
+      <height>181</height>
+     </rect>
+    </property>
+    <layout class="QHBoxLayout" name="horizontalLayout">
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout">
+       <item>
+        <widget class="QLabel" name="nameLabel">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);color: rgb(85, 255, 0);
+font: 10pt &quot;Lucida Console&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Name</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="occupationLabel">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);color: rgb(85, 255, 0);
+font: 10pt &quot;Lucida Console&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Occupation</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="ageLabel">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);color: rgb(85, 255, 0);
+font: 10pt &quot;Lucida Console&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Age</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="emailLabel">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);color: rgb(85, 255, 0);
+font: 10pt &quot;Lucida Console&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Email</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+     <item>
+      <layout class="QVBoxLayout" name="verticalLayout_2">
+       <item>
+        <widget class="QLabel" name="nameValue">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);color: rgb(85, 255, 0);
+font: 10pt &quot;Lucida Console&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Name</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="occupationValue">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);color: rgb(85, 255, 0);
+font: 10pt &quot;Lucida Console&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Occupation</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="ageValue">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);color: rgb(85, 255, 0);
+font: 10pt &quot;Lucida Console&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Age</string>
+         </property>
+        </widget>
+       </item>
+       <item>
+        <widget class="QLabel" name="emailValue">
+         <property name="styleSheet">
+          <string notr="true">background-color: rgba(255, 255, 255, 0);color: rgb(85, 255, 0);
+font: 10pt &quot;Lucida Console&quot;;</string>
+         </property>
+         <property name="text">
+          <string>Email</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </item>
+    </layout>
+   </widget>
+   <widget class="QLabel" name="personImage">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>110</y>
+      <width>140</width>
+      <height>140</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">background-color: rgba(255, 255, 255, 0);color: rgb(255, 255, 255);</string>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+   </widget>
+   <widget class="QProgressBar" name="progressBar">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>130</y>
+      <width>16</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true"/>
+    </property>
+    <property name="value">
+     <number>24</number>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Vertical</enum>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources>
+  <include location="mainwindow.qrc"/>
+ </resources>
+ <connections/>
+</ui>
