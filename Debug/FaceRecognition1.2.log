@@ -1,0 +1,73 @@
+﻿Build started 12/22/2015 1:45:31 AM.
+     1>Project "C:\Users\no\Google Drive\Visual Studio 2013\Projects\FaceRecognition1.2\FaceRecognition1.2\FaceRecognition1.2.vcxproj" on node 2 (Build target(s)).
+     1>CustomBuild:
+         Moc'ing mainwindow.h...
+         Uic'ing mainwindow.ui...
+         Moc'ing addperson.h...
+         Moc'ing controlpanel.h...
+         Moc'ing about.h...
+         Moc'ing facedatabase.h...
+         Moc'ing trainrecognizer.h...
+         Rcc'ing mainwindow.qrc...
+         Uic'ing trainrecognizer.ui...
+         Uic'ing addperson.ui...
+         Uic'ing facedatabase.ui...
+         Uic'ing controlpanel.ui...
+         Uic'ing about.ui...
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_about.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_about.cpp, GeneratedFiles\Release\moc_about.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_addperson.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_addperson.cpp, GeneratedFiles\Release\moc_addperson.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_controlpanel.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_controlpanel.cpp, GeneratedFiles\Release\moc_controlpanel.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_facedatabase.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_facedatabase.cpp, GeneratedFiles\Release\moc_facedatabase.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_mainwindow.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_mainwindow.cpp, GeneratedFiles\Release\moc_mainwindow.cpp.
+     1>C:\Program Files (x86)\MSBuild\Microsoft.Cpp\v4.0\V120\Microsoft.CppBuild.targets(935,5): warning MSB8027: Two or more files with the name of moc_trainrecognizer.cpp will produce outputs to the same location. This can lead to an incorrect build result.  The files involved are GeneratedFiles\Debug\moc_trainrecognizer.cpp, GeneratedFiles\Release\moc_trainrecognizer.cpp.
+       ClCompile:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IH:\Qt\5.5\msvc2013\include /I.\GeneratedFiles\Debug /IH:\Qt\5.5\msvc2013\include\QtCore /IH:\Qt\5.5\msvc2013\include\QtGui /IH:\Qt\5.5\msvc2013\include\QtWidgets /IH:\Qt\5.5\msvc2013\include\QtSql /IH:\Opencv2.4.9\opencv\build\include /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /D QT_SQL_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt about.cpp addperson.cpp controlpanel.cpp detectObject.cpp facedatabase.cpp GeneratedFiles\Debug\moc_about.cpp GeneratedFiles\Debug\moc_addperson.cpp GeneratedFiles\Debug\moc_controlpanel.cpp GeneratedFiles\Debug\moc_facedatabase.cpp GeneratedFiles\Debug\moc_mainwindow.cpp GeneratedFiles\Debug\moc_trainrecognizer.cpp ImageUtils.cpp main.cpp mainwindow.cpp preprocessFace.cpp recognition.cpp trainrecognizer.cpp
+         about.cpp
+         addperson.cpp
+         controlpanel.cpp
+         detectObject.cpp
+         facedatabase.cpp
+         moc_about.cpp
+         moc_addperson.cpp
+         moc_controlpanel.cpp
+         moc_facedatabase.cpp
+         moc_mainwindow.cpp
+         moc_trainrecognizer.cpp
+         ImageUtils.cpp
+         main.cpp
+         mainwindow.cpp
+         preprocessFace.cpp
+         recognition.cpp
+         trainrecognizer.cpp
+         Generating Code...
+     1>c:\users\no\google drive\visual studio 2013\projects\facerecognition1.2\facerecognition1.2\trainrecognizer.cpp(175): warning C4715: 'TrainRecognizer::getQImage' : not all control paths return a value
+     1>c:\users\no\google drive\visual studio 2013\projects\facerecognition1.2\facerecognition1.2\mainwindow.cpp(102): warning C4715: 'MainWindow::getQImage' : not all control paths return a value
+     1>c:\users\no\google drive\visual studio 2013\projects\facerecognition1.2\facerecognition1.2\controlpanel.cpp(203): warning C4715: 'ControlPanel::getQImage' : not all control paths return a value
+     1>c:\users\no\google drive\visual studio 2013\projects\facerecognition1.2\facerecognition1.2\addperson.cpp(281): warning C4715: 'AddPerson::getQImage' : not all control paths return a value
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\CL.exe /c /I.\GeneratedFiles /I. /IH:\Qt\5.5\msvc2013\include /I.\GeneratedFiles\Debug /IH:\Qt\5.5\msvc2013\include\QtCore /IH:\Qt\5.5\msvc2013\include\QtGui /IH:\Qt\5.5\msvc2013\include\QtWidgets /IH:\Qt\5.5\msvc2013\include\QtSql /IH:\Opencv2.4.9\opencv\build\include /Zi /nologo /W1 /WX- /Od /Oy- /D UNICODE /D WIN32 /D WIN64 /D QT_DLL /D QT_CORE_LIB /D QT_GUI_LIB /D QT_WIDGETS_LIB /D QT_SQL_LIB /Gm- /EHsc /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc120.pdb" /Gd /TP /analyze- /errorReport:prompt GeneratedFiles\qrc_mainwindow.cpp
+         qrc_mainwindow.cpp
+       Link:
+         C:\Program Files (x86)\Microsoft Visual Studio 12.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\Users\no\Google Drive\Visual Studio 2013\Projects\FaceRecognition1.2\Win32\Debug\\FaceRecognition1.2.exe" /NOLOGO /LIBPATH:H:\Qt\5.5\msvc2013\lib /LIBPATH:H:\Opencv2.4.9\opencv\build\x86\vc12\lib qtmaind.lib Qt5Cored.lib Qt5Guid.lib Qt5Widgetsd.lib Qt5Sqld.lib opencv_core249d.lib opencv_imgproc249d.lib opencv_highgui249d.lib opencv_ml249d.lib opencv_video249d.lib opencv_features2d249d.lib opencv_calib3d249d.lib opencv_objdetect249d.lib opencv_contrib249d.lib opencv_legacy249d.lib opencv_flann249d.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /manifest:embed /DEBUG /PDB:"C:\Users\no\Google Drive\Visual Studio 2013\Projects\FaceRecognition1.2\Win32\Debug\FaceRecognition1.2.pdb" /SUBSYSTEM:WINDOWS /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\Users\no\Google Drive\Visual Studio 2013\Projects\FaceRecognition1.2\Win32\Debug\FaceRecognition1.2.lib" /MACHINE:X86 /SAFESEH Debug\about.obj
+         Debug\addperson.obj
+         Debug\controlpanel.obj
+         Debug\detectObject.obj
+         Debug\facedatabase.obj
+         Debug\moc_about.obj
+         Debug\moc_addperson.obj
+         Debug\moc_controlpanel.obj
+         Debug\moc_facedatabase.obj
+         Debug\moc_mainwindow.obj
+         Debug\moc_trainrecognizer.obj
+         Debug\qrc_mainwindow.obj
+         Debug\ImageUtils.obj
+         Debug\main.obj
+         Debug\mainwindow.obj
+         Debug\preprocessFace.obj
+         Debug\recognition.obj
+         Debug\trainrecognizer.obj
+         FaceRecognition1.2.vcxproj -> C:\Users\no\Google Drive\Visual Studio 2013\Projects\FaceRecognition1.2\Win32\Debug\FaceRecognition1.2.exe
+     1>Done Building Project "C:\Users\no\Google Drive\Visual Studio 2013\Projects\FaceRecognition1.2\FaceRecognition1.2\FaceRecognition1.2.vcxproj" (Build target(s)).
+
+Build succeeded.
+
+Time Elapsed 00:00:35.01
